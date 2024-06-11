@@ -1,7 +1,7 @@
 /**
  * PROBLEMS:
- * BUG: If an error occurs and then you try to input a new expression the second operand can only be one digit long. Something to do with the boolean variable clearing the text field. Needs more thought
- * This entire thing is way to complicated for no reason.
+ * FIXED ~~BUG: If an error occurs and then you try to input a new expression the second operand can only be one digit long. Something to do with the boolean variable clearing the text field.~~
+ * This entire thing is way too complicated for no reason.
  */
 
 
@@ -57,7 +57,7 @@ function clearTextbox() {
 }
 
 function isTextboxOperator() {
-    switch(stack.peek()) {
+    switch(textbox.value) {
         case '+':
         case '-':
         case '*':
