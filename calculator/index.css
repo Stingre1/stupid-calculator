@@ -77,3 +77,19 @@ button {
 body {
     background-color:black;
 }
+
+button, .text-field {
+    transition: all;
+    transition-duration: 50ms;
+}
+
+button:hover {
+    border-color: gold;
+    box-shadow: 0 0 4px gold;
+    transform: scale(1.1);
+    color: gold;
+}
+
+.text-field:hover {
+    color: pink;
+}

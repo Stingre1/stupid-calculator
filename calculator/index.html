@@ -10,7 +10,7 @@
     <section class="fold">
         <div class="container">
             <div class="calculator">
-                <input class="text-field" placeholder="calculator" type="text" onmouseover="clearPrompt()" onmouseout="clearUnprompt()" onclick="clear()" readonly>
+                <input class="text-field" placeholder="calculator" type="text" onclick="clearClick()" onmouseenter="clearPrompt()" onmouseleave="clearUnprompt()"  readonly>
                 <div class="buttons">
                     <div class="buttonRow">
                         <button name="1" onclick="keyNumber('1')">1</button>

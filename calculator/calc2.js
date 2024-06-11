@@ -72,11 +72,11 @@ function keyNumber(digit) {
     if(isTextboxOperator()){
         clearTextbox()
     }
-    if(completedPreviousExpression === true || textbox.value === "error occurred.") {
+    if(completedPreviousExpression === true || textbox.value === "error occurred ") {
         stack.clear();
         clearTextbox()
     }
-    console.log("completedPreviousExpression: " + completedPreviousExpression)
+    // console.log("completedPreviousExpression: " + completedPreviousExpression)
     textbox.value += digit
     completedPreviousExpression = false
 }
@@ -98,7 +98,7 @@ function keyEquals() {
         console.log("Result: " + result)
         textbox.value = result
     } catch {
-        textbox.value = "error occurred."
+        textbox.value = "error occurred "
     }
     completedPreviousExpression = true
 }
@@ -106,7 +106,7 @@ function keyEquals() {
 function clearPrompt() {
     if(!stack.isEmpty()) {
         stack.push(textbox.value)
-        textbox.value = "click to clear"
+        textbox.value = "click to clear "
     }
 }
 
@@ -116,7 +116,8 @@ function clearUnprompt() {
     }
 }
 
-function clear() {
+function clearClick() {
     stack.clear()
     clearTextbox()
+    // console.log("clear() function finish")
 }
