@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex: 1;
+    margin: auto;
+    padding: 2rem;
+    width: 100%; 
+    max-width: 29rem;
+    align-items: center;
+}
+
+.fold {
+    width: 100%;
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: center;
+     */
+}
+
+.calculator {
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: cadetblue;
+    border: 5px solid azure;
+    border-radius: 5%;
+    
+}
+.text-field {
+    margin-top: 1rem;
+    width: 25rem;
+    height: 5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flexbox;
+    align-self: center;
+    border: 4px solid black;
+    border-radius: 23%;
+    background-color: azure;
+    color: gray;
+    font-size: 3rem;
+    font-family: Veradana;
+    text-align: right;
+}
+
+.buttons {
+    display: flexbox;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.buttonRow {
+    /* border: 1px solid black; */
+    display: flex;
+    flex: 1;
+    margin: 4px;
+    padding: 8px;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+button {
+    border: 3px solid black;
+    border-radius: 25%;
+    width: 6rem;
+    height: 5rem;
+    background-color: gray;
+    color: beige;
+    font-size: 3rem;
+}
+
+#buttonZero {
+    width: 12rem;
+}
+
+body {
+    background-color:black;
+}

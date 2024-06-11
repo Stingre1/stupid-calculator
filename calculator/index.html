@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <section class="fold">
+        <div class="container">
+            <div class="calculator">
+                <input class="text-field" placeholder="calculator" type="text" onmouseover="clearPrompt()" onmouseout="clearUnprompt()" onclick="clear()" readonly>
+                <div class="buttons">
+                    <div class="buttonRow">
+                        <button name="1" onclick="keyNumber('1')">1</button>
+                        <button name="2" onclick="keyNumber('2')">2</button>
+                        <button name="3" onclick="keyNumber('3')">3</button>
+                        <button name="+" onclick="keyOperator('+')">+</button>
+                    </div>
+                    <div class="buttonRow">
+                        <button name="4" onclick="keyNumber('4')">4</button>
+                        <button name="5" onclick="keyNumber('5')">5</button>
+                        <button name="6" onclick="keyNumber('6')">6</button>
+                        <button name="-" onclick="keyOperator('-')">-</button>
+                    </div>
+                    <div class="buttonRow">
+                        <button name="7" onclick="keyNumber('7')">7</button>
+                        <button name="8" onclick="keyNumber('8')">8</button>
+                        <button name="9" onclick="keyNumber('9')">9</button>
+                        <button name="*" onclick="keyOperator('*')">*</button>
+                    </div>
+                    <div class="buttonRow">
+                        <button name="0" id="buttonZero" onclick="keyNumber('0')">0</button>
+                        <button name="/" onclick="keyOperator('/')">/</button>
+                        <button name="=" onclick="keyEquals()">=</button>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- <script src="./calc.js" type="module"></script> -->
+    <script src="./calc2.js"></script>
+</body>
+</html>
