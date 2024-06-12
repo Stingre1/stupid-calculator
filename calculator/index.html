@@ -13,30 +13,36 @@
                 <input class="text-field" placeholder="calculator" type="text" onclick="clearClick()" onmouseenter="clearPrompt()" onmouseleave="clearUnprompt()"  readonly>
                 <div class="buttons">
                     <div class="buttonRow">
+                        <button name="1" onclick="clearClick()">AC</button>
+                        <button name="2" onclick="keyNumber('%')">%</button>
+                        <button name="+" onclick="clearC('+')">C</button>
+                        <button name="+" onclick="keyOperator('+')">+</button>
+                    </div>
+                    <div class="buttonRow">
                         <button name="1" onclick="keyNumber('1')">1</button>
                         <button name="2" onclick="keyNumber('2')">2</button>
                         <button name="3" onclick="keyNumber('3')">3</button>
-                        <button name="+" onclick="keyOperator('+')">+</button>
+                        <button name="-" onclick="keyOperator('-')">-</button>
                     </div>
                     <div class="buttonRow">
                         <button name="4" onclick="keyNumber('4')">4</button>
                         <button name="5" onclick="keyNumber('5')">5</button>
                         <button name="6" onclick="keyNumber('6')">6</button>
-                        <button name="-" onclick="keyOperator('-')">-</button>
+                        <button name="*" onclick="keyOperator('*')">*</button>
                     </div>
                     <div class="buttonRow">
                         <button name="7" onclick="keyNumber('7')">7</button>
                         <button name="8" onclick="keyNumber('8')">8</button>
                         <button name="9" onclick="keyNumber('9')">9</button>
-                        <button name="*" onclick="keyOperator('*')">*</button>
-                    </div>
+                        <button name="/" onclick="keyOperator('/')">/</button>
+                    </div>        
                     <div class="buttonRow">
                         <button name="0" id="buttonZero" onclick="keyNumber('0')">0</button>
-                        <button name="/" onclick="keyOperator('/')">/</button>
+                        <button name="." onclick="keyNumber('.')">.</button>
                         <button name="=" onclick="keyEquals()">=</button>
                     </div>
                 </div>
-        </div>
+            </div>
         </div>
     </section>
 

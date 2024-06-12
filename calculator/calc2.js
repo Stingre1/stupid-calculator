@@ -76,12 +76,17 @@ function keyNumber(digit) {
         stack.clear();
         clearTextbox()
     }
-    // console.log("completedPreviousExpression: " + completedPreviousExpression)
+    console.log("completedPreviousExpression: " + completedPreviousExpression)
     textbox.value += digit
     completedPreviousExpression = false
 }
  
 function keyOperator(operator) {
+    // if(operator = "%") {
+    //   stack.push("/")
+    //   stack.push(100)
+    // } else {
+      // }
     stack.push(textbox.value) //the operand
     stack.push(operator)
     console.log("Expression: " + stack.items.join(' '))
